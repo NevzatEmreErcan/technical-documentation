@@ -1,0 +1,131 @@
+html{
+    font-size: 20px;
+}
+
+body{
+    padding-left: 12rem;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#page-header{
+    width: 100%;
+}
+
+#page-header h1{
+    padding: .8em 0 0 .8em;
+}
+
+#navbar{
+    position: fixed;
+    top:0;
+    left: 0;
+
+    width: 12rem;
+    height: 100svh;
+    
+    border-right: 1px solid #fff;
+}
+
+#navbar header{
+    font-size: 1.8em;
+    padding: .5em;
+
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+#navbar ul{
+    list-style: none;
+    font-size: 1.4em;
+    padding: .4em 1em 1em 1.4em;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar ul::before{
+    content:"";
+
+    width: 1px;
+    height: 5em;
+    margin: .4em 0 0 -.4em;
+    border: 1px solid #578df1;
+
+    position: absolute;
+}
+
+#navbar a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#main-doc{
+    width: 100%;
+}
+
+#main-doc section{
+    padding: 4em 1em;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+#main-doc section:first-child,
+#main-doc section:last-of-type{
+    border: none;
+}
+
+#main-doc section header{
+    font-size: 1.8em;
+
+    padding-bottom: .4em;
+}
+
+#main-doc > section > p ~ p{
+    padding-top: 1em;
+}
+
+#main-doc section #example-text{
+    margin-top: .5em;
+    padding: .5em;
+    background-color: #292828;
+    border-radius: 5px;
+}
+
+#main-doc #syntax li{
+    padding: .4em;
+    list-style: none;
+}
+
+#main-doc #syntax li div{
+    background-color: #151524;
+    padding: .4em .8em;
+    margin-left: 1em;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+#main-doc #filler_2 li{
+padding: 1em 1em 0;
+list-style: none;
+}
+
+@media (max-width: 978px) {
+    #navbar{
+        display: none;
+    }
+
+    body{
+        padding-left: 0;
+    }
+}
